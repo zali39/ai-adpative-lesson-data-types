@@ -1,0 +1,1 @@
+# Adaptive Python Data Types App\n\nRun with:\n\n```bash\nstreamlit run streamlit_app.py\n```
