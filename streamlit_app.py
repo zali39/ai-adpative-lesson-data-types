@@ -8,7 +8,7 @@ import sqlite3
 from urllib.parse import urlencode
 
 # --- Persistent User Storage ---
-conn = sqlite3.connect("user_progress.db")
+conn = sqlite3.connect(":memory:")
 c = conn.cursor()
 c.execute('''CREATE TABLE IF NOT EXISTS progress (
     timestamp TEXT, question TEXT, selected TEXT, correct TEXT,
